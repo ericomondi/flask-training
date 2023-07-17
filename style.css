@@ -1,0 +1,61 @@
+.profile-photo{
+     height: 200px;
+     width: 159px;
+     border-radius: 100px;
+                }
+.icons-div{
+     margin-bottom: 1000px;
+    padding-left: 350px;
+                }
+.linkedin-icon{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+body{
+    background-color:grey;
+}
+
+p{
+    color: orange;
+}
+
+table{
+    font-weight: bold;
+    font-style: italic;
+    
+}
+.profile-photo{
+    margin-left: 44%;
+}
+.head{
+    margin-left: 45%;
+    color: green;
+}
+h3{
+    color: blue;
+    font-style: italic;
+}
+#li1{
+    color: aqua;
+}
+#li2{
+    color: blueviolet;
+}
+#li3{
+    color: chocolate;
+}
+#li4{
+    color: cornsilk;
+}
+.text-body{
+    margin-left: 20%;
+}
+.contactme-div{
+    margin-left: 80%;
+}
+dt{
+    color: red;
+}
+dd{
+    color: rgb(6, 56, 39);

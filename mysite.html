@@ -1,41 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>My Profile</title>
-    
-    <style>
-     .profile-photo{
-            height: 200px;
-            width: 159px;
-            border-radius: 100px;
-                  }
-    .icons-div{
-           margin-bottom: 1000px;
-           padding-left: 350px;
-                  }
-   .linkedin-icon{
-    margin-left: 20px;
-    margin-right: 20px;
-      
-   }
-   body{
-    background-color:grey;
-   }
-   .ulist{
-    color: brown;
-   }
-   p{
-    color: brown;
-   }
-   h2{
-    color: green;
-   }
-   table{
-    color: blue;
-   }
-   
-   </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" type="image/x-icon" href="logos/favicon.png">
 </head>
 <body>
@@ -47,15 +15,15 @@
     <area target="_blank" alt="eyes" title="eyes" href="https://www.webmd.com/eye-health/picture-of-the-eyes" coords="97,70,12" shape="circle">
     <area target="_blank" alt="nose" title="nose" href="https://my.clevelandclinic.org/health/body/21778-nose" coords="69,109,82,83,97,106,90,113,79,110,71,93,100,89" shape="poly">
 </map>
-    <h2>Ochieng Eric Omondi</h2>
-    <p> I'm a certified <a href="https://github.com/Eric-Omondi/mywebsite.git" target="_blank">Software Engeneer</a> <br />
+    <h2 class="head">Eric Omondi</h2>
+    <p class="text-body"> I'm a certified <a href="https://github.com/Eric-Omondi/mywebsite.git" target="_blank">Software Engeneer</a> <br />
         with vast experience in all niches.</p>
-        <h3>My Skills</h3>
-        <ul class="ulist">
-            <li>Web Design</li>
-            <li>Web Development</li>
-            <li>SEO</li>
-            <li>Digital Media</li>
+        <h3  class="head">My Skills</h3>
+        <ul class="text-body">
+            <li id="li1">Web Design</li>
+            <li id="li2">Web Development</li>
+            <li id="li3">SEO</li>
+            <li id="li4">Digital Media</li>
         </ul>
         <h3>My Projects</h3>
         <table border="1">
@@ -75,13 +43,13 @@
                     <td>23/09/2002</td>
                 </tr>
                 <tr>
-                    <td>1</td>
+                    <td>2</td>
                     <td>KEMSA Website</td>
                     <td> Developed with HTML, CSS and bootsrap with responsive data</td>
                     <td>23/09/2002</td>
                 </tr>
                 <tr>
-                    <td>1</td>
+                    <td>3</td>
                     <td>KCB Website</td>
                     <td> Developed with HTML, CSS and bootsrap with responsive data</td>
                     <td>23/09/2002</td>
@@ -94,7 +62,7 @@
             <dt>KEMSA</dt>
               <dd>Was developed in six Months</dd>
             </dl>
-        <div>
+        <div class="contactme-div">
         <h3>Contact Me</h3>
         <form>
             <input name="full_name" type="text" placeholder="Enter Full Name" >
