@@ -15,27 +15,32 @@
       .container {
         background-color: rgb(22, 179, 241);
         height: 300px;
-        width: 400px;
+        width: 550px;
         margin-top: 30px;
+        padding-top: 25px;
+        padding-left: 10px;
       }
       .title {
         display: inline;
+        
       }
       .htext {
         background-color: orange;
-        display: inline;
+        
       }
       p {
         color: white;
         margin-top: -1px;
-        font-weight: bold;
+        font-weight: bolder;
+      
       }
       .youtube {
         display: inline;
         position: relative;
         top: 0;
         left: 0;
-        padding-top: 30px;
+        margin-left: 25px;
+        
         
       }
 
@@ -43,23 +48,37 @@
         position: relative;
         top: 0;
         left: 0;
+        
       }
 
       #wifi-icon {
         position: absolute;
-        bottom: 9px;
-        left: 0.05px;
-        rotate: 30%;
+        bottom: 18px;
+        
+        transform: rotate(0.18turn);
+        
+      }
+      .body-div{
+        margin-top: 75px;
+        display: inline;
+        
+      }
+      img{
+        width: 150px;
+        height: 120px;
+        padding-left: 300px;
+        margin-bottom: 300px;
       }
     </style>
   </head>
   <body>
     <div class="container">
+      
       <p class="title">simplilearn</p>
 
       <div class="youtube">
         <i
-          class="fa-brands fa-youtube"
+          class="fa-brands fa-youtube fa-2xl"
           style="color: red"
           id="youtube-icon"
         ></i>
@@ -67,9 +86,13 @@
       </div>
 
       <br /><br />
-
+    <div class="body-div">
       <p class="htext">WEB DEVELOPMENT <br />PROJECT</p>
+      <br>
       <p>FOR BEGINNERS</p>
+      <img src="/images/computer-in-use.jpg" alt="Computer in use.">
+    </div>
+    
     </div>
   </body>
 </html>
