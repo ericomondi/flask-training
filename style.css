@@ -26,8 +26,16 @@ p{
 table{
     font-weight: bold;
     font-style: italic;
+    width: 100%;
+    text-align: center;
     
 }
+tr:hover {
+    background-color: rgb(20, 17, 240);
+}
+.tablehead:hover {background-color: coral;
+}
+
 .profile-photo{
     margin-left: 44%;
 }
@@ -59,7 +67,7 @@ h3{
 }
 
 .text-body{
-    margin-left: 20%;
+    margin-left: 50%;
 }
 
 .contactme-div{
