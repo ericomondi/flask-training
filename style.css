@@ -81,3 +81,6 @@ dt{
 dd{
     color: rgb(6, 56, 39);
 }
+input[type=checkbox] {
+    accent-color: red;
+  }
