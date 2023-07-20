@@ -15,8 +15,16 @@
     <link href="https://fonts.cdnfonts.com/css/the-bold-font" rel="stylesheet">
 </head>
 <style>
-    @import url('https://fonts.cdnfonts.com/css/the-bold-font');
+    @font-face {
+        font-family: custom-font;
+        src: url(font/Rubik-Bold.ttf);
+    }
+    @font-face {
+        font-family: font2;
+        src: url(font/Rubik-Regular.ttf);
+    }
 
+    
     .container{
         background-image: url(simpback.png);
         background-size: 100%;
@@ -50,6 +58,8 @@
     .midnav pre{
         padding-top: 10px;
         padding-left: 10px;
+        font-family:font2;
+        font-size: 13px;
     }
 
     .container .rightnav{
@@ -74,7 +84,9 @@
         margin-left: 259px;
 
     }
-
+    .body-text p{
+        font-family: font3;
+    }
              
     
 
@@ -87,8 +99,8 @@
     }
 
     .title-cont .title{
-        font-size: 36px;
-        font-family: 'The Bold Font', sans-serif;
+        font-size: 34px;
+        font-family: custom-font;
     }
 
     .container .button{
