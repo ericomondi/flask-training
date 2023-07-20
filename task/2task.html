@@ -8,53 +8,80 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://fonts.cdnfonts.com/css/the-bold-font" rel="stylesheet">
     <style>
+      @import url('https://fonts.cdnfonts.com/css/the-bold-font');
       .container {
-        background-color: aqua;
-        height: 400px;
+        height: 100%;
+        background-image: url(background.png);
+        background-size: 100%;
+        
       }
       .container img {
         padding-left: 30px;
-        padding-top: 10px;
+        padding-top: 75px;
         color: white;
+        margin-left: 25px;
+        width: 250px;
       }
+      
       .textdiv .text {
         background-color: rgba(253, 173, 2, 255);
       }
-      .youtube {
-        margin-bottom: 88px;
-        margin-top: -90px;
-        margin-left: 190px;
+      .textdiv .ptext {
+        background-color: rgba(253, 173, 2, 255);
+        padding-top: 6px;
       }
-      span{
+      .container .youtube {
+        margin-top: -40px;
+        margin-left: 350px;
+      }
+      .textdiv span{
         color: white;
         font-weight: 900;
+        font-size: 62px;
+        font-family: 'The Bold Font', sans-serif;
+        padding-left: 11px; 
+        padding-right: 12px;
+                                                        
       }
-      .textdiv{
+      .container .textdiv{
         padding-left: 50px;
+        margin-top: 155px;
+        margin-left: 18px;
+        
       }
       #wifi-icon{
-        margin-left: -14px;
+        margin-left: 373px;
+        margin-top: -20px;
+        transform: rotate(0.16turn);
+        color: #b93e50;
         
+      }
+      .textdiv .pjdiv{
+         margin-top: 10px;
+         margin-bottom: -25px;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <img src="logo.png" />
+      <img src="logo-image.png" />
      <div class="youtube">
       <i class="fa-brands fa-youtube fa-2xl"
-        style="color: red">
-      </i>
-      <i class="fa-solid fa-wifi fa-xs" id="wifi-icon">
-
+        style="color: #e32e2f">
       </i>
      </div>
+     <i class="fa-solid fa-wifi fa-2xl" id="wifi-icon">
+
+     </i>
 
       <div class="textdiv">
         <span class="text">WEB DEVELOPMENT</span>
-        <br />
-        <span class="text">PROJECT</span>
+        <br>
+        <div class="pjdiv">
+          <span class="ptext">PROJECTS</span>
+        </div>
         <br>
         <span>FOR BEGINNERS</span>
       </div>
