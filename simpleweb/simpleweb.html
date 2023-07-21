@@ -19,10 +19,7 @@
         font-family: custom-font;
         src: url(font/Rubik-Bold.ttf);
     }
-    @font-face {
-        font-family: font2;
-        src: url(font/Rubik-Regular.ttf);
-    }
+    
 
     
     .container{
@@ -34,15 +31,15 @@
     .container .leftnav{
         width: 50px;
         height: 50px;
-        
-        
-
-    }
+             
+        }
 
     .leftnav #bar-icon{
-        padding-top: 10px;
-        padding-left: 10px;
+        padding-top: 29px;
+        padding-left: 25px;
         color: white;
+        
+
     }
 
     .container .midnav{
@@ -51,15 +48,37 @@
         margin-left: 50px;
         margin-top: -63px;
         
-        
+    }
+
+    .midnav .home{
+        width: 50px;
+        margin-top: 30px;
+        margin-left: 20px;
+        height: 21px;
        
+    }
+
+    .midnav .service{
+        width: 60px;
+        margin-left: 80px;
+        margin-top: -34px;
+        height: 21px;
+       
+       
+    }
+
+    .midnav .about{
+        width: 55px;
+        margin-left: 150px;
+        margin-top: -34px;
+        height: 21px;
+        
     }
 
     .midnav pre{
         padding-top: 10px;
         padding-left: 10px;
-        font-family:font2;
-        font-size: 13px;
+        
     }
 
     .container .rightnav{
@@ -74,24 +93,22 @@
     .container .title-cont{
         width: 200px;
         height: 100px;
-        margin-top: 180px;
-        margin-left: 200px;
+        margin-top: 100px;
+        margin-left: 95px;
+        margin-bottom: 12px;
 
     }
 
     .container .body-text{
         width: 200px;
-        margin-left: 259px;
+        margin-left: 150px;
+        margin-bottom: 25px;
 
     }
-    .body-text p{
-        font-family: font3;
-    }
-             
     
-
+          
     p{
-        color: white;
+        color: #ffffff;
 
     }
     pre{
@@ -105,24 +122,26 @@
 
     .container .button{
         height: 34px;
-        width: 110px;
+        width: 120px;
         border-radius: 17px;
-        margin-left: 245px;
+        margin-left: 150px;
+        color: white;
+        font-size: 16px;
+        background-color: rgba(95,169,208,255);
+        border-color: rgba(95,169,208,255);
         
-
-        
-        
-    }
+        }
 
     .container .break{
         width: 50px;
         color: white;
-        margin-left: 200px;
+        margin-left: 95px;
         margin-bottom: -24px;
         background-color: white;
         height: 4px;
         
     }
+    
 </style>
 <body>
     <div class="container">
@@ -135,8 +154,20 @@
         </div>
 
         <div class="midnav">
-            <pre>Home   Services   About</pre>
+            
+            <div class="home">
+              <pre>Home</pre>
+            </div>
 
+
+            <div class="service">
+                <pre>Service</pre>
+            </div>
+
+            <div  class="about">
+                <pre>About</pre>
+
+            </div>
 
         </div>
 
@@ -160,9 +191,9 @@
         </div>
 
         
-            <button class="button" style="background-color: rgba(95,169,208,255); border-color: rgba(95,169,208,255);">
+        <button class="button" >
                 Portfolio
-            </button>
+        </button>
 
         
 
