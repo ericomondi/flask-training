@@ -15,21 +15,22 @@
 .container .bar-div {
   position: absolute;
   top: 5%;
-  left: 2%;
+  left: 3.5%;
   color: white;
+  
 }
 
 .container .home-div {
   position: absolute;
   bottom: 89.8%;
-  left: 5.5%;
+  left: 8.5%;
   color: white;
   font-size: 15px;
 }
 
 .container .service-div {
   position: absolute;
-  left: 10%;
+  left: 15%;
   bottom: 89.8%;
   color: white;
   font-size: 15px;
@@ -37,7 +38,7 @@
 
 .container .about-div {
   position: absolute;
-  left: 15%;
+  left: 22%;
   bottom: 89.8%;
   color: white;
   font-size: 15px;
@@ -53,9 +54,9 @@
 
 .container .title-div {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 10%;
-  font-size: 40px;
+  font-size: 45px;
   font-family: custom-font;
   color: white;
 }
@@ -63,21 +64,22 @@
 .container .body-div {
   position: absolute;
   width: 200px;
-  top: 57%;
-  left: 14%;
+  top: 48%;
+  left: 15%;
   color: white;
   opacity: 0.4;
+  font-size: 13px;
 }
 
 .container .button-div {
   position: absolute;
-  top: 70%;
+  top: 59%;
   left: 14%;
 }
 
 .container .break-div {
   position: absolute;
-  top: 56%;
+  top: 47%;
   left: 10%;
 }
 
@@ -89,7 +91,7 @@
 
 .button-div button {
   color: white;
-  height: 36px;
+  height: 35px;
   background-color: rgba(95, 169, 208, 255);
   border-color: rgba(95, 169, 208, 255);
   width: 128px;
