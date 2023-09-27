@@ -4,7 +4,7 @@ app = Flask(__name__)
 # route that user uses to request resources from
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("bootstrap.html")
 
 @app.route("/heloo")
 def heloo():
