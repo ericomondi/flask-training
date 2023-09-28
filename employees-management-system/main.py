@@ -13,7 +13,7 @@ def get_connection():
     )
 # get table data
 
-def get_data():
+def get_data(table_name):
         
         conn = get_connection()
         # Create a cursor
@@ -21,7 +21,7 @@ def get_data():
 
         # here we etrieve data from the table and return them as records
         
-        cursor.execute(f"SELECT * FROM products")
+        cursor.execute(f"SELECT * FROM {table_name}")
         products = cursor.fetchall()
         conn.close
 
@@ -49,26 +49,37 @@ def insert_product(product_name, buying_price, selling_price, stock_quantity):
     finally:
         conn.close()
 
-# Route for handling form submission
-@app.route("/", methods=["GET", "POST"])
+# index route
+@app.route("/")
 def index():
+    return render_template("bootstrap.html")
+
+
+@app.route("/products",methods=["GET", "POST"])
+def products_int():
+
     if request.method == "POST":
         # Retrieve form data
         product_name = request.form["product_name"]
         buying_price = float(request.form["buying_price"])
         selling_price = float(request.form["selling_price"])
         stock_quantity = int(request.form["stock_quantity"])
-
         # Insert the product into the database
         insert_product(product_name, buying_price, selling_price, stock_quantity)
 
-        # Redirect to the index page to show the updated product list
-        return redirect(url_for("index"))
-
-    # Fetch product data from the database
-    records = get_data()
+        return redirect(url_for("products_int"))
     
-    return render_template("bootstrap.html", products=records)
+    records = get_data("products")
+    return render_template("products.html", products=records )
+
+
+@app.route("/sales", methods=["GET"])
+def sales_int():
+
+    records = get_data("sales")
+   
+    return render_template("sales.html", sales= records)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
